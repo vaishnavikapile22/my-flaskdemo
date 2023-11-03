@@ -11,6 +11,7 @@ Create database use python command.Data.db - SQLite DB with one table 'Movie'. I
 requirements.txt - Packages needed to run this app. Ensure to 'pip install -r requirements.txt' in your projects virtual environment
 
 Command:
+create ec2 instance
 
 sudo apt install python3.10
 
