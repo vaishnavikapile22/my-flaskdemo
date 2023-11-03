@@ -36,14 +36,6 @@ def get_movies():
     return {"Movies": movie_list}, 200
 
 
-# For GET request to http://localhost:5000/movies/<id>
-@app.route('/movies/<id>')
-def get_movie(id):
-    movie = Movie.query.get_or_404(id)
-    return jsonify({'Id': movie.id, 'Name': movie.name, 'Language': movie.language,
-                    'Genre': movie.genre, 'IMDB rating': movie.rating})
-
-
 # For POST request to http://localhost:5000/movies
 @app.route('/movies', methods=['POST'])
 def add_movie():
